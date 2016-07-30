@@ -1,0 +1,25 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script src="{{ SITEURL }}/theme/assets/js/parallax.min.js"></script>
+<script src="https://www.atlasestateagents.co.uk/javascript/tether.min.js"></script><!-- Tether for Bootstrap -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js"
+        integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD"
+        crossorigin="anonymous"></script>
+<script>
+    jQuery(document).ready(function ($) {
+        $("[data-scroll-to]").click(function (event) {
+            event.preventDefault();
+
+            var defaultAnchorOffset = 0;
+
+            var anchor = $(this).data('scroll-to');
+            var $ancor_elem = $('#' + anchor);
+            var anchorOffset = $ancor_elem.data('scroll-offset');
+            if (!anchorOffset)
+                anchorOffset = defaultAnchorOffset;
+
+            $('html,body').animate({
+                scrollTop: $ancor_elem.offset().top - anchorOffset
+            }, 500);
+        });
+    });
+</script>

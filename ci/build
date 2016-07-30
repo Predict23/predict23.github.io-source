@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -e
+
+BASEDIR=`dirname $0`/..
+
+
+pelican ${BASEDIR}/content -s ${BASEDIR}/pelicanconf.py --theme-path ${BASEDIR}/theme --verbose
+

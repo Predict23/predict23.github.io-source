@@ -1,0 +1,94 @@
+html,body,.container-fluid,.content {
+    height: 100%;
+    font-family: Roboto,RobotoDraft,Helvetica,Arial,sans-serif;
+}
+body{
+    color: #A3ABA3;
+    background-color: #292F29;
+
+}
+
+h1{
+    font-size: 2em;
+    font-weight: 400;
+}
+
+a {
+    color: #D6D9DC;
+}
+#OHeader {
+    padding-top: 160px;
+    padding-bottom: 160px;
+}
+#OHeader .jumbotron {
+    color: #3C3C3C;
+    background-color: rgba(255, 255, 255, 0.88);
+}
+
+#OHeader .jumbotron .brand {
+    font-size: 18px;
+}
+
+.brand::before,#OHeader .jumbotron .brand::after{
+    color: rgba(241, 172, 19, 0.34);
+    width: 1em;
+    display: inline-block;
+}
+.brand::before {
+    content: "{";
+    text-align: right;
+    margin-left: -1em;
+    padding-right: 8px;
+}
+.brand::after {
+    content: "}";
+    margin-left: 8px;
+}
+
+/* buttons */
+.btn-primary {
+
+    -webkit-user-select: none;
+    -webkit-transition: background .2s .1s;
+    transition: background .2s .1s;
+    border: 0;
+    -webkit-border-radius: 3px;
+    border-radius: 3px;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 14px;
+    font-weight: 500;
+    min-width: 4em;
+    outline: none;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    text-transform: uppercase;
+    -webkit-tap-highlight-color: transparent;
+
+    line-height: 20px;
+
+    background-color: #4285f4;
+
+}
+
+
+/* end buttons */
+
+/*
+* Google Form
+*/
+.freebirdHeaderMast{
+    display: none;
+}
+.freebirdFormviewerViewFormCard:first-of-type {
+  margin-top: 0;
+}
+.gform-frame {
+    -webkit-box-flex: 1;
+    -ms-flex-positive: 1;
+    flex-grow: 1;
+}
+/*
+* End Google Form
+*/
