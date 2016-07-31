@@ -10,7 +10,7 @@ SITENAME = "Predict23"
 SITEURL = 'https://predict23.ru'
 
 
-AUTHOR = u"Проект &laquo;Прогноз-23&raquo;"
+AUTHOR = u"&laquo;Прогноз-23&raquo;"
 
 DESCRIPTION = u'Расчет и заполнение рекомендуемых товаров на основе статистики просмотров и заказов'
 GITHUB_URL = 'https://github.com/Predict23'
@@ -30,16 +30,12 @@ DEFAULT_PAGINATION = 4
 DEFAULT_DATE = (2012, 3, 2, 14, 1, 1)
 
 
-# path-specific metadata
+STATIC_PATHS = ['images', 'extra/robots.txt', 'extra/favicon.ico']
 EXTRA_PATH_METADATA = {
     'extra/robots.txt': {'path': 'robots.txt'},
+    'extra/favicon.ico': {'path': 'favicon.ico'}
 }
 
-# static paths will be copied without parsing their contents
-STATIC_PATHS = [
-    'pictures',
-    'extra/robots.txt',
-]
 
 
 

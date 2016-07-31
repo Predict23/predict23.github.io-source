@@ -29,20 +29,16 @@ a {
     font-size: 18px;
 }
 
-.brand::before,#OHeader .jumbotron .brand::after{
-    color: rgba(241, 172, 19, 0.34);
-    width: 1em;
+.brand{
+    color: rgba(255, 255, 255, 0.34);
     display: inline-block;
+    font-size: 24px;
+    font-weight: 300;
+    text-decoration: none;
 }
-.brand::before {
-    content: "{";
-    text-align: right;
-    margin-left: -1em;
-    padding-right: 8px;
-}
-.brand::after {
-    content: "}";
-    margin-left: 8px;
+.brand:hover{
+    color: rgba(255, 255, 255, 0.55);
+    text-decoration: none;
 }
 
 /* buttons */
