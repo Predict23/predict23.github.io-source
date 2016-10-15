@@ -7,4 +7,5 @@ BASEDIR=`dirname $0`/..
 
 pelican ${BASEDIR}/content -s ${BASEDIR}/pelicanconf.py --theme-path ${BASEDIR}/theme \
     --relative-urls --autoreload --verbose
-    
+
+#python -m pelican.server
