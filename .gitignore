@@ -10,3 +10,4 @@ hs_err*
 release.properties
 pom.xml.*
 output
+pelicanconf.pyc
